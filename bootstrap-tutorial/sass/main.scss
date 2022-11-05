@@ -1,0 +1,14 @@
+$custom-theme-colors: (
+  "recycle": #0c177a,
+);
+
+$primary: #c219d1;
+$danger: #85c7c4;
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+//importing the rest of the bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
